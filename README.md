@@ -1,36 +1,193 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 Daily Learning Streak Tracker
 
-## Getting Started
+A modern full-stack web application that helps students maintain *daily study consistency* by tracking learning streaks.
 
-First, run the development server:
+This project was developed as part of the *KALNET Full Stack Task* and demonstrates full-stack development using *Next.js, TypeScript, and Tailwind CSS*.
 
-```bash
+---
+
+## 🚀 Live Demo
+
+Deployed on *Vercel*
+
+https://daily-learning-streak-tracker-two.vercel.app/
+
+---
+
+## 🎯 Project Objective
+
+Students often lose consistency in studying.
+This application motivates students to maintain *daily learning habits* by tracking their study streak.
+
+Users can:
+
+* Mark *"I Studied Today"*
+* Track their *current study streak*
+* View *total study days*
+* See their *last study date*
+* Check *study history*
+* View study dates in a *calendar*
+
+---
+
+## 🛠 Tech Stack
+
+* *Next.js (App Router)*
+* *TypeScript*
+* *Tailwind CSS*
+* *Next.js API Routes*
+* *LocalStorage for data storage*
+* *Vercel for deployment*
+
+---
+
+## ✨ Features
+
+### 📊 Dashboard
+
+* Displays *current streak*
+* Shows *total study days*
+* Shows *last study date*
+
+### 📅 Calendar View
+
+* Highlights all study days
+* Helps visualize learning consistency
+
+### 🔥 Streak Tracking
+
+* Automatically calculates study streak
+* Resets streak if a day is missed
+
+### 📈 Progress Bar
+
+* Displays monthly learning progress
+
+### 🌙 Dark Mode
+
+* Toggle between light and dark themes
+
+### 📜 Study History
+
+* Shows all previous study dates
+* Newest entries appear first
+
+---
+
+## 🧠 Streak Logic
+
+The streak follows these rules:
+
+1. If the user studies *today and yesterday*, streak continues.
+2. If the user *misses a day*, the streak resets.
+3. Users *cannot mark study twice in one day*.
+
+Example:
+
+| Date     | Studied |
+| -------- | ------- |
+| 10 March | ✅       |
+| 11 March | ✅       |
+| 12 March | ✅       |
+
+Streak = *3*
+
+If the user skips *13 March* and studies on *14 March, the streak resets to **1*.
+
+---
+
+## 📂 Project Structure
+
+
+app
+ ├ api
+ │   ├ study
+ │   ├ streak
+ │   └ history
+ ├ history
+ │   └ page.tsx
+ └ page.tsx
+
+components
+ ├ Sidebar
+ ├ StatsCard
+ ├ StudyButton
+ ├ ProgressBar
+ ├ StudyCalendar
+ ├ DarkModeToggle
+
+lib
+ └ streakLogic
+
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+
+git clone https://github.com/billolaabhinay/Daily-Learning-Streak-Tracker.git
+
+
+Navigate to the project folder:
+
+
+cd daily-learning-streak-tracker
+
+
+Install dependencies:
+
+
+npm install
+
+
+Run the development server:
+
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open in browser:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Deployment
 
-## Deploy on Vercel
+The project is deployed using *Vercel*.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Steps:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push project to GitHub
+2. Connect repository to Vercel
+3. Deploy automatically
+
+---
+
+## 📸 Screenshots
+
+Dashboard
+Calendar View
+Study History
+
+(Add screenshots here after deployment)
+
+---
+
+## 📌 Future Improvements
+
+* GitHub-style streak heatmap
+* Study reminders
+* Study statistics charts
+* User authentication
+* Leaderboard for students
+
+---
+
+
+
+⭐ If you like this project, feel free to star the repository!
